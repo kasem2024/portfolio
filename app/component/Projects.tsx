@@ -1,8 +1,8 @@
 'use client'
-import React, { useState } from 'react'
+import  { useState } from 'react'
 import Card from './Card'
 
-const projects = () => {
+const Projects = () => {
 
     const [myProjects , setMyProject] = useState(
       [
@@ -19,4 +19,4 @@ const projects = () => {
   )
 }
 
-export default projects
+export default Projects
