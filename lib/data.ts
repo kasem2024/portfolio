@@ -39,7 +39,6 @@ export const links = [
 export const experiencesData = [
   {
     title: "C++ & Java ",
-
     description:
       "I first learned the fundamentals of data structures and algorithms, followed by gaining proficiency in object-oriented programming design using Java.",
     icon: React.createElement(SiLoop),
@@ -85,6 +84,7 @@ export const experiencesData = [
 export const projectsData = [
   {
     title: "Games",
+    
     description:
       "I worked on this project to provide comprehensive information about various games, enhancing the user experience.",
     tags: ["React", "ReactQuery", "ReactRouter", "Tailwind", "Prisma"],
