@@ -2,26 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --text-rgb: 0, 0, 0;
-  --background-rgb: 255, 255, 255;
+html {
+  --line-color: #e5e7eb;
 }
 
- @media (prefers-color-scheme: dark) {
-  :root {
-    --text-rgb: 255, 255, 255;
-    --background-rgb: 0, 0, 0;
-  
-  }
-} 
-
-body {
-  color: rgb(var(--text-rgb));
-  background: rgb(var(--background-rgb))
+html.dark {
+  --line-color: rgba(255, 255, 255, 0.2);
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.borderBlack {
+  @apply border border-black/10;
 }
