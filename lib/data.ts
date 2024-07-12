@@ -84,10 +84,9 @@ export const experiencesData = [
 export const projectsData = [
   {
     title: "Games",
-    
     description:
       "I worked on this project to provide comprehensive information about various games, enhancing the user experience.",
-    tags: ["React", "ReactQuery", "ReactRouter", "Tailwind", "Prisma"],
+    tags: ["React", "ReactQuery", "ReactRouter", "Tailwind","Typescript"],
     imageUrl: corpcommentImg,
     link:"https://games-three-teal.vercel.app"
   },
@@ -95,7 +94,7 @@ export const projectsData = [
     title: "CloudCraze",
     description:
       "I worked on this project to provide comprehensive weather information. Based on your location or city, you will receive the current weather conditions as well as the forecast for the rest of the week.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+    tags: ["React", "Tailwind","RESTful API"],
     imageUrl: rmtdevImg,
     link:"https://cloudcraze-v2.vercel.app"
   },
@@ -103,7 +102,7 @@ export const projectsData = [
     title: "Movies",
     description:
       "I worked on this project to show users movie trailers and provide a seamless, engaging experience. Additionally, the platform includes detailed movie information",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+    tags: ["React", "Next.js","Html", "Tailwind", ],
     imageUrl: wordanalyticsImg,
     link:"https://movie-application-hazel.vercel.app"
 
@@ -112,10 +111,18 @@ export const projectsData = [
     title: "YouTube Clone",
     description:
       "I worked on developing a YouTube clone that allows users to search for specific content and view various channels.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+    tags: ["React","RESTful API", "Html", "Tailwind", "Framer"],
     imageUrl: wordanalyticsImg2,
     link:'https://youtubeclone-bay-rho.vercel.app'
 
+  },
+  {
+    title: "Watches Store",
+    description:
+      " The platform, developed with Next.js, offers advanced filtering features, allowing users to sort watches by color, size, and price. Utilizing Upstash for efficient database storage and React Query for optimized data fetching. Additionally, users can effortlessly sort watches by price, from high to low or low to high.",
+    tags: ["React", "Next.js", "TypeScript", "Tailwind", "Framer"],
+    imageUrl: wordanalyticsImg2,
+    link:'https://watch-store-rouge.vercel.app'
   },
 ] as const;
 
