@@ -7,6 +7,7 @@ import { TbBrandPhp } from "react-icons/tb";
 import rmtdevImg from "@/public/weather.png";
 import wordanalyticsImg from "@/public/movies.png";
 import wordanalyticsImg2 from "@/public/youtube.png";
+import watchstore from "@/public/watch-store.png";
 import { SiLoop } from "react-icons/si";
 import { FaNodeJs } from "react-icons/fa";
 export const links = [
@@ -119,9 +120,9 @@ export const projectsData = [
   {
     title: "Watches Store",
     description:
-      " The platform, developed with Next.js, offers advanced filtering features, allowing users to sort watches by color, size, and price. Utilizing Upstash for efficient database storage and React Query for optimized data fetching. Additionally, users can effortlessly sort watches by price, from high to low or low to high.",
-    tags: ["React", "Next.js", "TypeScript", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg2,
+      " The platform offers advanced filtering features, allowing users to sort watches by color, size, and price.Additionally, users can effortlessly sort watches by price, from high to low or low to high.",
+    tags: [ "Next.js", "TypeScript", "Tailwind"],
+    imageUrl: watchstore,
     link:'https://watch-store-rouge.vercel.app'
   },
 ] as const;
