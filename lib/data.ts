@@ -8,6 +8,7 @@ import rmtdevImg from "@/public/weather.png";
 import wordanalyticsImg from "@/public/movies.png";
 import wordanalyticsImg2 from "@/public/youtube.png";
 import watchstore from "@/public/watch-store.png";
+import tetrisGame from "@/public/TetrisGame.png";
 import { SiLoop } from "react-icons/si";
 import { FaNodeJs } from "react-icons/fa";
 export const links = [
@@ -124,6 +125,14 @@ export const projectsData = [
     tags: [ "Next.js", "TypeScript", "Tailwind"],
     imageUrl: watchstore,
     link:'https://watch-store-rouge.vercel.app'
+  },
+  {
+    title: "Tetris Game",
+    description:
+      " This game allows the player to move the shape (tetromino) left, right, and down, and rotate it. Additionally, it provides the player with stats about their current level and points, and includes a preview of the upcoming shapes.",
+    tags: [ "Javascript", "React", "css"],
+    imageUrl: tetrisGame,
+    link:'https://tetris-game-beige.vercel.app'
   },
 ] as const;
 
