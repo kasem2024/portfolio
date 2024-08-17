@@ -2,12 +2,11 @@
 import React from 'react'
 import {motion} from 'framer-motion'
 
-import useSound from 'use-sound'
+
 
 
 import { skillsData } from '@/lib/data'
-import { FaNode } from 'react-icons/fa'
-import { cn } from '@/lib/utils'
+
 import { TypewriterEffect } from '@/components/ui/typewriter-effect'
 import { skillWords, words } from '@/lib/words'
 const fadeInAnimationVariants = {
@@ -25,7 +24,7 @@ const fadeInAnimationVariants = {
 };
 
 const page = () => {
-  const [play] = useSound('/skills/sound.mp3');
+
   return (
     <main className='relative w-screen h-screen   bg-skills bg-cover  '>
         <div className='absolute top-0 left-0 flex flex-col inset-0 justify-center items-center w-full h-full z-50 max-w-[1170px]  mx-auto'>

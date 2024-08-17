@@ -79,14 +79,14 @@ export function SidebarLayout({children}:{children:ReactNode}) {
   const socialLinks = [
     {
       label: "LinkedIn",
-      href: "/",
+      href: "https://www.linkedin.com/in/mohamed-kasem-a8060128b",
       icon: (
         <FaLinkedin className="text-neutral-800 h-5 w-5 flex-shrink-0  " color="blue" />
       ),
     },
      {
       label: "GitHub",
-      href: "/",
+      href: "https://github.com/kasem2024",
       icon: (
         <FaGithubSquare className="text-neutral-800 h-5 w-5  flex-shrink-0  "  color="black"/>
       ),
