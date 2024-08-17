@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion'
 import React from 'react'
 import { Vortex } from './ui/vortex'
-import Intro from './Intro'
+import Introducation from './Introducation'
 import FlipWordsHeading from './FlipWordsHeading'
 
 const Wizard = () => {
@@ -33,7 +33,7 @@ const Wizard = () => {
             Thank you for stopping by, and I&apos;m eager to explore future opportunities and collaborate on something amazing!
           </div>
         </div>
-        <Intro />
+        <Introducation />
         <div className='w-[400px] h-[400px]'></div>
       </Vortex>
     </motion.div>

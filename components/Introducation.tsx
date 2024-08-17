@@ -1,14 +1,10 @@
 
 'use client'
-import { cn } from '@/lib/utils'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import React from 'react'
 
-const Intro = () => {
- 
-
- 
+const Introducation = () => {
   return (
     <motion.div  
       initial={{ scale: 0 , opacity:0  }}
@@ -36,4 +32,4 @@ const Intro = () => {
   )
 }
 
-export default Intro
+export default Introducation
