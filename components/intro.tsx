@@ -3,7 +3,7 @@
 import { cn } from '@/lib/utils'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
-import React, { useRef, useState } from 'react'
+import React from 'react'
 
 const Intro = () => {
  
@@ -29,7 +29,7 @@ const Intro = () => {
        className='  font-extrabold text-5xl text-black'>
           &#x1F44B;
       </motion.span>
-      <div  className={cn("absolute top-0 left-0 z-20  rounded-full  w-full h-full outline-8 outline-dashed outline-offset-8 outline-white ") } >
+      <div  className="absolute top-0 left-0 z-20  rounded-full  w-full h-full outline-8 outline-dashed outline-offset-8 outline-white" >
      
       </div>     
     </motion.div>
