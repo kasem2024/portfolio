@@ -20,7 +20,7 @@ const page = () => {
     <main className='relative w-full h-full   bg-services bg-cover  '>
       <div className='bg-gray-900/70 backdrop-blur-lg bg-cover w-full h-full absolute  '>
       </div>
-      <div className='text-white w-full h-full max-w-[1170px] mx-auto  z-50'>
+      <div className='text-white w-full h-full max-w-[1170px] mx-auto  z-40'>
        
         <ul className='flex flex-col justify-center items-center w-full h-full  gap-[2px] md:gap-3  '>
         {services?.map((item ,idx)=>(

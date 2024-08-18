@@ -254,26 +254,23 @@ const cards = [
     },
   },
   {
-    description: "Pusher (Node.js)",
+    description: "Pusher (Next.js)",
     title: "Real-Time Messaging",
     ctaText: "Open",
     content: () => {
       return (
         <p>
-          Project Overview:
-          <br />
-          In one of my recent projects, I developed a competitive online chat platform that featured real-time messaging, utilizing Node.js for the backend and Pusher to handle real-time data transmission. The chat system was designed to provide a seamless and responsive communication experience, catering to users who require instant interaction.
-          <br />
-          Technical Details:
-          <br />
-          Backend Development: Node.js was chosen for its efficiency and ability to handle asynchronous operations, making it ideal for managing real-time messaging. The server managed user authentication, message storage, and delivered messages instantly between users.
-          Real-Time Messaging: Pusher was integrated to enable real-time communication, ensuring that messages were delivered and displayed instantly without requiring manual refreshes. This created a dynamic and engaging user experience.
-          Challenges Overcome: One of the primary challenges was optimizing the system to handle a large number of concurrent users while maintaining low latency. We implemented efficient message queues and optimized database interactions to ensure the platform could scale without compromising performance.
-          <br />
-          Impact:
-          <br />
-          This project demonstrated my ability to build a high-performance, real-time communication platform from scratch. It provided hands-on experience with real-time data handling, user authentication, and the integration of third-party services like Pusher to enhance the user experience.
-        </p>
+      Project Overview: <br/>
+      In one of my recent projects, I developed a competitive online chat platform that featured real-time messaging, utilizing Next.js for the backend and Pusher to handle real-time data transmission. The chat system was designed to provide a seamless and responsive communication experience, catering to users who require instant interaction.
+      <br/>
+      Technical Details:<br/>
+
+      Backend Development: Next.js was chosen for its flexibility and powerful features, making it ideal for managing real-time messaging. The server managed user authentication, message storage, and delivered messages instantly between users.
+      Real-Time Messaging: Pusher was integrated to enable real-time communication, ensuring that messages were delivered and displayed instantly without requiring manual refreshes. This created a dynamic and engaging user experience.
+      Challenges Overcome: One of the primary challenges was optimizing the system to handle a large number of concurrent users while maintaining low latency. We implemented efficient message queues and optimized database interactions to ensure the platform could scale without compromising performance.
+      <br/>Impact:<br/>
+      This project demonstrated my ability to build a high-performance, real-time communication platform from scratch. It provided hands-on experience with real-time data handling, user authentication, and the integration of third-party services like Pusher to enhance the user experience.
+    </p>
       );
     },
   },

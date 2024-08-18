@@ -16,7 +16,7 @@ export default function Contact() {
       id="contact"
       className="relative text-center w-screen h-screen bg-skills">
       <div className="bg-black/50  inset-0 w-full h-full "></div>
-      <div className="absolute inset-0 w-full h-full max-w-[1100px] mx-auto md:mt-40 mt-20 z-50">
+      <div className="absolute inset-0 w-full h-full max-w-[1100px] mx-auto md:mt-40 mt-20 z-40">
         <p className="text-gray-100 text-lg md:text-xl ">
           Please contact me directly at{" "}
           <a className="underline" href="mailto:kasem2023mohareb@gmail.com">
