@@ -197,14 +197,12 @@ Tools and Libraries: Utilizing MATLAB&apos;s powerful image processing toolbox, 
 Challenges Overcome: One of the significant challenges we tackled was optimizing the algorithms to handle large image datasets without compromising performance. This required careful consideration of computational efficiency and memory usage.
 Impact:<br/>
 The project demonstrated the potential of MATLAB in real-world applications and laid the groundwork for further research in image processing. Our work not only enhanced our technical skills but also provided valuable insights into the practical challenges of working with complex image data.
-
-
         </p>
       );
     },
   },
   {
-    description: "Python ",
+    description: "Python",
     title: "Chat System",
     ctaText: "Open",
     content: () => {
@@ -221,9 +219,9 @@ Libraries and Tools: The system was built using essential Python libraries like 
 Challenges Overcome: One of the key challenges was ensuring real-time performance while maintaining scalability. We implemented efficient data handling and optimized the server to manage numerous concurrent connections without latency issues.
 <br/> Impact: <br/>
 The project demonstrated our ability to build a fully functional, scalable chat system from scratch. It provided valuable insights into real-time communication protocols, data security, and the importance of user-centric design. This experience significantly enhanced our understanding of network programming and multi-threading in Python.
-</p>
-    );
-  },
+        </p>
+      );
+    },
   },
   {
     description: "Spring Boot (Java)",
@@ -263,7 +261,7 @@ The project showcased our ability to integrate front-end and back-end technologi
       Challenges Overcome: One of the primary challenges was optimizing the system to handle a large number of concurrent users while maintaining low latency. We implemented efficient message queues and optimized database interactions to ensure the platform could scale without compromising performance.
       <br/>Impact:<br/>
       This project demonstrated my ability to build a high-performance, real-time communication platform from scratch. It provided hands-on experience with real-time data handling, user authentication, and the integration of third-party services like Pusher to enhance the user experience.
-    </p>
+        </p>
       );
     },
   },
@@ -355,27 +353,29 @@ This project showcased my leadership and technical skills in integrating advance
     },
   },
   {
-    description: "HTML CSS JS",
-    title: "Interactive web pages",
+
+
+    description: "React Native",
+    title: "Mobile Application",
     ctaText: "Open",
     content: () => {
       return (
         <p>
-        Project Overview:<br/>
-I have extensive experience building interactive web pages, utilizing HTML, CSS, and JavaScript to create dynamic and engaging user experiences. These projects involved developing responsive designs, implementing complex interactions, and optimizing performance for a wide range of devices and browsers.
-<br/>
-Key Contributions:<br/>
-
-Web Development: Designed and built responsive, mobile-friendly websites with interactive features, including animations, user inputs, and real-time updates.
-Performance Optimization: Focused on optimizing the performance of web pages to ensure fast loading times and smooth user experiences across different devices.
-Cross-Browser Compatibility: Ensured compatibility with major browsers, providing consistent experiences regardless of the user's platform.
+         Project Overview:<br/>
+         As part of my professional development, I built a cross-platform mobile application using React Native. The app was designed to provide a seamless and responsive user experience, offering a variety of features tailored to meet users&apos; needs across iOS and Android devices.
+         <br/>
+Technical Details:<br/>
+Frontend Development: Developed the app&apos;s front-end using React Native, ensuring a smooth and responsive user experience across different devices and screen sizes.
+Backend Integration: Integrated the app with a Node.js backend, enabling secure data storage, user authentication, and real-time updates.
+Optimization: Focused on optimizing performance and minimizing load times to ensure a fast, user-friendly experience.
 <br/>Impact:<br/>
-These projects demonstrated my ability to create visually appealing, functional web pages that prioritize user engagement and performance, showcasing my proficiency in front-end development.
+This project allowed me to demonstrate my ability to build a full-featured mobile application, showcasing my skills in mobile development, performance optimization, and cross-platform compatibility.
         </p>
       );
     },
-  },
+  }
 ];
+
 
 
 
