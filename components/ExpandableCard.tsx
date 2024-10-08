@@ -352,28 +352,7 @@ This project showcased my leadership and technical skills in integrating advance
       );
     },
   },
-  {
-
-
-    description: "React Native",
-    title: "Mobile Application",
-    ctaText: "Open",
-    content: () => {
-      return (
-        <p>
-         Project Overview:<br/>
-         As part of my professional development, I built a cross-platform mobile application using React Native. The app was designed to provide a seamless and responsive user experience, offering a variety of features tailored to meet users&apos; needs across iOS and Android devices.
-         <br/>
-Technical Details:<br/>
-Frontend Development: Developed the app&apos;s front-end using React Native, ensuring a smooth and responsive user experience across different devices and screen sizes.
-Backend Integration: Integrated the app with a Node.js backend, enabling secure data storage, user authentication, and real-time updates.
-Optimization: Focused on optimizing performance and minimizing load times to ensure a fast, user-friendly experience.
-<br/>Impact:<br/>
-This project allowed me to demonstrate my ability to build a full-featured mobile application, showcasing my skills in mobile development, performance optimization, and cross-platform compatibility.
-        </p>
-      );
-    },
-  }
+ 
 ];
 
 
