@@ -21,29 +21,28 @@ import { BiCertification  } from "react-icons/bi";
 import { GrContact } from "react-icons/gr";
 import { FaLinkedin } from "react-icons/fa";
 import {  FaGithubSquare} from "react-icons/fa";
-import { TbSquareLetterWFilled } from "react-icons/tb";
-import { FaFacebook } from "react-icons/fa"
+
 export function SidebarLayout({children}:{children:ReactNode}) {
   const links = [
     {
       label: "Home",
       href: "/",
       icon: (
-        <IoHomeOutline className="text-neutral-800 h-5 w-5 flex-shrink-0  " />
+        <IoHomeOutline className="text-teal-500 h-5 w-5 flex-shrink-0  " />
       ),
     },
     {
       label: "Projects",
       href: "projects",
       icon: (
-        <CgWebsite className="text-neutral-800 h-5 w-5  flex-shrink-0  "  color="black"/>
+        <CgWebsite className="text-teal-500 h-5 w-5  flex-shrink-0   "  />
       ),
     },
     {
         label: "Education",
         href: "education",
         icon: (
-          <LuGraduationCap className="text-neutral-800   h-5 w-5 flex-shrink-0" />
+          <LuGraduationCap className="text-teal-500   h-5 w-5 flex-shrink-0" />
         ),
       },
     {
@@ -51,44 +50,44 @@ export function SidebarLayout({children}:{children:ReactNode}) {
       href: "certifications",
       icon: (
          <BiCertification 
-           className="  h-5 w-5  flex-shrink-0" />
+           className=" text-teal-500 h-5 w-5  flex-shrink-0" />
       ),
     },
     {
       label: "Skills",
       href: "skills",
       icon: (
-        <SiHyperskill className="  h-5 w-5  flex-shrink-0" />
+        <SiHyperskill className=" text-teal-500 h-5 w-5  flex-shrink-0" />
       ),
     },
     {
       label: "Services",
       href: "services",
       icon: (
-        <RiServiceLine className="  h-5 w-5   flex-shrink-0" />
+        <RiServiceLine className="text-teal-500  h-5 w-5   flex-shrink-0" />
       ),
     },
     {
       label: "Contact",
       href: "contact",
       icon: (
-        <GrContact className="  h-5 w-5  flex-shrink-0" />
+        <GrContact className=" text-teal-500 h-5 w-5  flex-shrink-0" />
       ),
     },
   ];
   const socialLinks = [
     {
       label: "LinkedIn",
-      href: "https://www.linkedin.com/in/mohamed-kasem-a8060128b",
+      href: "/",
       icon: (
-        <FaLinkedin className="text-neutral-800 h-5 w-5 flex-shrink-0  " color="blue" />
+        <FaLinkedin className="text-blue-500 h-5 w-5 flex-shrink-0  "  />
       ),
     },
      {
       label: "GitHub",
-      href: "https://github.com/kasem2024",
+      href: "/",
       icon: (
-        <FaGithubSquare className="text-neutral-800 h-5 w-5  flex-shrink-0  "  color="black"/>
+        <FaGithubSquare className="text-white h-5 w-5  flex-shrink-0  " />
       ),
       },
    
@@ -105,7 +104,7 @@ export function SidebarLayout({children}:{children:ReactNode}) {
           <SidebarBody className="justify-between gap-10">
             <div className="flex flex-col flex-1 overflow-y-auto overflow-x-hidden">
                 <>
-                <Image src={"/assets/newlogo.png"} alt="image" width={25} height={25}/>
+                <Image src={"/assets/newlogo.png"} alt="image" width={30} height={30}/>
                 </>
                 <div className="mt-8 flex flex-col gap-2">
                   {links.map((link, idx) => (

@@ -20,7 +20,7 @@ const page = () => {
     <main className='relative w-full h-full   bg-services bg-cover  '>
       <div className='bg-gray-900/70 backdrop-blur-lg bg-cover w-full h-full absolute  '>
       </div>
-      <div className='text-white w-full h-full max-w-[1170px] mx-auto  z-40'>
+      <div className='text-white w-full h-full max-w-[1170px] mx-auto  z-50'>
        
         <ul className='flex flex-col justify-center items-center w-full h-full  gap-[2px] md:gap-3  '>
         {services?.map((item ,idx)=>(
@@ -30,9 +30,9 @@ const page = () => {
            variants={fadeInAnimationVariants}
            initial="initial"
            whileInView="animate"
-           className='flex items-center justify-start w-full bg-white/10 backdrop-blur-lg md:px-5 md:py-3 px-2 py-2 gap-3 shadow-lg rounded-lg  '>
-               <div className='w-7 h-7 bg-white text-green-600 rounded-md'>
-                <IoMdDoneAll  size={25}/>
+           className='flex items-center justify-start w-full bg-white/10 backdrop-blur-lg  md:px-5 md:py-3 px-[2px] py-[2px] gap-3 shadow-lg rounded-lg  '>
+               <div className='w-4 h-4 bg-white text-teal-600 rounded-md'>
+                <IoMdDoneAll  className='text-lg'/>
                </div>
                <span className='text-sm md:text-md lg:text-md xl:text-lg'>
                 {item}

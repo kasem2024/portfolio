@@ -34,7 +34,7 @@ const FlipWordsHeading = () => {
       stiffness: 270,
       damping: 80,
      }}
-     className=" justify-center items-center px-4 hidden sm:flex">
+     className=" justify-center items-center px-4 hidden sm:flex ">
     <div className="text-2xl  font-normal text-zinc-100  ">
      <span className='text-4xl text-zinc-100'>Build</span>
       <FlipWords words={words} className='text-teal-500 font-bold text-4xl -ml-1' /> <br />

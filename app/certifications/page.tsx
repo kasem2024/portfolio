@@ -23,7 +23,7 @@ const Certifications = () => {
         }}>
       
           <div className='h-screen w-screen bg-gradient-to-br from-yellow-500   to-teal-900 relative'>
-              {showDemo2 && <a onClick={()=>setShowDemo2(false)} href="#demo2" className='z-50 absolute right-40 bottom-10 rounded-full w-10 h-10  bg-black flex items-center justify-center text-white'>    
+              {showDemo2 && <a onClick={()=>setShowDemo2(false)} href="#demo2" className='z-40 absolute right-40 bottom-10 rounded-full w-10 h-10  bg-black flex items-center justify-center text-white'>    
                 <BiChevronsDown  size={60}  className='animate-bounce'/>
               </a>}
               <Demo1/>
