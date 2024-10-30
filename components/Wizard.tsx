@@ -33,7 +33,7 @@ const Wizard = () => {
 </div>
 
      </div>
-    <div className='w-[400px] h-[380px]'>
+    <div className='w-[400px] h-[380px]  '>
     <Intro />
     </div>
     <div className='w-[400px] h-[400px]'></div>
