@@ -103,10 +103,13 @@ export function SidebarLayout({children}:{children:ReactNode}) {
         <Sidebar open={open} setOpen={setOpen} animate={true}>
           <SidebarBody className="justify-between gap-10">
             <div className="flex flex-col flex-1 overflow-y-auto overflow-x-hidden">
-                <>
-                <Image src={"/assets/newlogo.png"} alt="image" width={30} height={30}/>
-                </>
-                <div className="mt-8 flex flex-col gap-2">
+                <div className="flex justify-start items-center pl-[3px]">
+                <Image src={"/logos/kasemlogo.png"} alt="image" width={40} height={40}/>
+                <div className="font-bold text-lg first-letter:text-cyan-600 first-letter:text-2xl text-pink-900">
+                   Kasem
+                </div>
+                </div>
+                <div className="mt-8 flex flex-col gap-1">
                   {links.map((link, idx) => (
                     <SidebarLink key={idx} link={link}  />
                   ))}

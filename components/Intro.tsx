@@ -31,7 +31,7 @@ const Intro = () => {
               &#x1F44B;
           </motion.span>
         </div>
-        <div className=' text-zinc-200 font-serif flex justify-center items-center text-2xl w-[85%] m-auto rounded-sm bg-black mt-5 shadow-lg'>
+        <div className=' text-zinc-200 font-serif flex justify-center items-center text-2xl w-[85%] m-auto rounded-sm bg-gray-800/90  mt-5 shadow-lg'>
           <div className=' text-teal-600 inline-flex p-3'><AiFillSafetyCertificate /></div>
           Mohamed Kasem
         </div>

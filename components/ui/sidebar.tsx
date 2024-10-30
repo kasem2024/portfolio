@@ -116,7 +116,7 @@ export const MobileSidebar = ({
       <div
       
         className={cn(
-          "  absolute top-2 right-2 flex flex-row md:hidden py-[3px] px-[3px] items-center justify-between bg-neutral-800 rounded-lg z-50"
+          "  absolute top-2 right-2 flex flex-row md:hidden py-[3px] px-[3px] items-center justify-between bg-gray-800 rounded-lg z-50"
         )}
         {...props}
       >
@@ -145,7 +145,7 @@ export const MobileSidebar = ({
               )}
             >
               <div
-                className="absolute right-[9px] top-[10px] z-50 text-teal-500 bg-neutral-800 rounded-md py-1 px-1 cursor-pointer"
+                className="absolute right-[9px] top-[10px] z-50 text-teal-700 bg-gray-800 rounded-md py-1 px-1 cursor-pointer"
                 onClick={() => setOpen(!open)}
               >
                 <IconX />
@@ -173,7 +173,7 @@ export const SidebarLink = ({
     <Link
       href={link.href}
       className={cn(
-        "flex items-center w-[70%] md:w-full justify-start gap-2 px-[6px] py-[2px] md:px-2 md:py-2 group/sidebar rounded-lg bg-neutral-800 backdrop-blur-lg",
+        "flex items-center w-[70%] md:w-full justify-start gap-2 px-[6px] py-[10px] md:px-2 md:py-2 group/sidebar rounded-lg bg-gray-800 backdrop-blur-lg",
         className
       )}
       {...props}
@@ -186,7 +186,7 @@ export const SidebarLink = ({
           display: animate ? (open ? "inline-block" : "none") : "inline-block",
           opacity: animate ? (open ? 1 : 0) : 1,
         }}
-        className="text-zinc-300   text-sm group-hover/sidebar:translate-x-2 transition duration-300 whitespace-pre inline-block !p-0 !m-0"
+        className="text-zinc-100   text-sm group-hover/sidebar:translate-x-2 transition duration-300 whitespace-pre inline-block !p-0 !m-0"
       >
         {link.label}
       </motion.span>

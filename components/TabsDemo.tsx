@@ -8,10 +8,10 @@ export function TabsDemo() {
 
   const tabs = [
     {
-      title: "Gamehub",
+      title: "Hub",
       value: "gamehub",
       content: (
-        <div className="w-full overflow-hidden relative h-[60vh] md:h-[70vh] rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-teal-900 to-yellow-400">
+        <div className="w-full overflow-hidden relative h-[60vh] md:h-[70vh] rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-gray-800 to-teal-700">
           <p>NextPlay Hub </p>
           <GameHub />
         </div>
@@ -21,7 +21,7 @@ export function TabsDemo() {
       title: "Movies",
       value: "Movies",
       content: (
-        <div className="w-full overflow-hidden relative h-[60vh] md:h-[70vh] rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-teal-900 to-yellow-400">
+        <div className="w-full overflow-hidden relative h-[60vh] md:h-[70vh] rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-gray-800 to-teal-700">
           <p>Movies Now</p>
           <Movies />
         </div>
@@ -31,7 +31,7 @@ export function TabsDemo() {
       title: "Weather",
       value: "Weather",
       content: (
-        <div className="w-full overflow-hidden relative h-[60vh] md:h-[70vh] rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-teal-900 to-yellow-400">
+        <div className="w-full overflow-hidden relative h-[60vh] md:h-[70vh] rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-gray-800 to-teal-700">
           <p>CloudCraze</p>
           <CloudCraze />
         </div>
@@ -41,7 +41,7 @@ export function TabsDemo() {
       title: "Intertainment",
       value: "Intertainment",
       content: (
-        <div className="w-full overflow-hidden relative h-[60vh] md:h-[70vh] rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-teal-900 to-yellow-400">
+        <div className="w-full overflow-hidden relative h-[60vh] md:h-[70vh] rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-gray-800 to-teal-700">
           <p>YouStream</p>
           <Videos />
         </div>
@@ -51,17 +51,17 @@ export function TabsDemo() {
       title: "Store",
       value: "Store",
       content: (
-        <div className="w-full overflow-hidden relative h-[60vh] md:h-[70vh] rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-teal-900 to-yellow-400">
+        <div className="w-full overflow-hidden relative h-[60vh] md:h-[70vh] rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-gray-800 to-teal-700">
           <p>WatchStore</p>
           <Watches />
         </div>
       ),
     },
     {
-      title: "TetrisGame",
+      title: "Games",
       value: "TetrisGame",
       content: (
-        <div className="w-full overflow-hidden relative h-[60vh] md:h-[70vh] rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-teal-900 to-yellow-400">
+        <div className="w-full overflow-hidden relative h-[60vh] md:h-[70vh] rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-gray-800 to-teal-700">
           <p>TetrisGame</p>
           <TetrisGame />
         </div>
@@ -95,14 +95,14 @@ const GameHub = () => {
         height="500"
         className="object-cover object-left-top h-[90%]  absolute -bottom-10 hover:scale-95 transition inset-x-0 w-[90%] rounded-xl mx-auto"
       />
-      <div className=" w-full h-full absolute top-0 left-0 text-sm sm:text-md md:text-lg lg:text-2xl bg-black/50 hidden group-hover:block transiation ">
+      <div className=" w-full h-full absolute top-0 left-0 text-sm sm:text-md md:text-lg lg:text-2xl bg-black/20 hidden group-hover:block transiation ">
       <div className="w-full h-full flex items-center justify-center gap-3">
        <Link href={"https://games-three-teal.vercel.app"} target="_blank">
            <motion.div 
            whileTap={{scale:0} 
            }
            transition={{type:'spring' }}
-             className="shadow-lg bg-gradient-to-br from-teal-900 to-yellow-400 hover:from-zinc-800 hover:to-teal-400  px-6 py-3 rounded-md transition">
+             className="shadow-lg bg-gradient-to-br from-teal-800 to-gray-700 hover:from-zinc-800 hover:to-teal-400  px-6 py-3 rounded-md transition">
                Visit
            </motion.div >
        </Link>
@@ -122,14 +122,14 @@ const Movies = () => {
        height="500"
        className="object-cover object-left-top h-[90%]  absolute -bottom-10 group-hover:scale-95 transition inset-x-0 w-[90%] rounded-xl mx-auto"
      />
-     <div className=" w-full h-full absolute top-0 left-0 text-sm sm:text-md md:text-lg lg:text-2xl bg-black/50 hidden group-hover:block transiation ">
+     <div className=" w-full h-full absolute top-0 left-0 text-sm sm:text-md md:text-lg lg:text-2xl bg-black/20 hidden group-hover:block transiation ">
        <div className="w-full h-full flex items-center justify-center gap-3">
          <Link href={"https://movie-application-hazel.vercel.app"} target="_blank">
             <motion.div 
             whileTap={{scale:0} 
             }
             transition={{type:'spring' }}
-              className="shadow-lg bg-gradient-to-br from-teal-900 to-yellow-400 hover:from-zinc-800 hover:to-teal-400  px-6 py-3 rounded-md transition">
+              className="shadow-lg bg-gradient-to-br from-teal-800 to-gray-700 hover:from-zinc-800 hover:to-teal-400  px-6 py-3 rounded-md transition">
                  Visit
             </motion.div >
          </Link>
@@ -150,14 +150,14 @@ const  CloudCraze= () => {
       height="500"
       className="object-cover object-left-top h-[90%]  absolute -bottom-10 group-hover:scale-95 transition inset-x-0 w-[90%] rounded-xl mx-auto"
     />
-    <div className=" w-full h-full absolute top-0 left-0 text-sm sm:text-md md:text-lg lg:text-2xl bg-black/50 hidden group-hover:block transiation ">
+    <div className=" w-full h-full absolute top-0 left-0 text-sm sm:text-md md:text-lg lg:text-2xl bg-black/20 hidden group-hover:block transiation ">
       <div className="w-full h-full flex items-center justify-center gap-3">
         <Link href={"https://cloudcraze-v2.vercel.app"} target="_blank">
             <motion.div 
             whileTap={{scale:0} 
             }
             transition={{type:'spring' }}
-              className="shadow-lg bg-gradient-to-br from-teal-900 to-yellow-400 hover:from-zinc-800 hover:to-teal-400  px-6 py-3 rounded-md transition">
+              className="shadow-lg bg-gradient-to-br from-teal-800 to-gray-700 hover:from-zinc-800 hover:to-teal-400  px-6 py-3 rounded-md transition">
                  Visit
             </motion.div >
         </Link>
@@ -178,14 +178,14 @@ const Videos = () => {
       height="500"
       className="object-cover object-left-top h-[90%]  absolute -bottom-10 group-hover:scale-95 transition inset-x-0 w-[90%] rounded-xl mx-auto"
     />
-    <div className=" w-full h-full absolute top-0 left-0 text-sm sm:text-md md:text-lg lg:text-2xl bg-black/50 hidden group-hover:block transiation ">
+    <div className=" w-full h-full absolute top-0 left-0 text-sm sm:text-md md:text-lg lg:text-2xl bg-black/20 hidden group-hover:block transiation ">
       <div className="w-full h-full flex items-center justify-center gap-3">
        <Link href={"https://youtubeclone-bay-rho.vercel.app"} target="_blank">
            <motion.div 
            whileTap={{scale:0} 
            }
            transition={{type:'spring' }}
-             className="shadow-lg bg-gradient-to-br from-teal-900 to-yellow-400 hover:from-zinc-800 hover:to-teal-400  px-6 py-3 rounded-md transition">
+             className="shadow-lg bg-gradient-to-br from-teal-800 to-gray-700 hover:from-zinc-800 hover:to-teal-400  px-6 py-3 rounded-md transition">
                 Visit
            </motion.div >
        </Link>
@@ -206,14 +206,14 @@ const Watches = () => {
        height="500"
        className="object-cover object-left-top h-[90%]  absolute -bottom-10 group-hover:scale-95 transition inset-x-0 w-[90%] rounded-xl mx-auto"
      />
-     <div className=" w-full h-full absolute top-0 left-0 text-sm sm:text-md md:text-lg lg:text-2xl bg-black/50 hidden group-hover:block transiation ">
+     <div className=" w-full h-full absolute top-0 left-0 text-sm sm:text-md md:text-lg lg:text-2xl bg-black/20 hidden group-hover:block transiation ">
        <div className="w-full h-full flex items-center justify-center gap-3">
           <Link href={"https://watch-store-rouge.vercel.app"} target="_blank">
              <motion.div 
              whileTap={{scale:0} 
              }
              transition={{type:'spring' }}
-               className="shadow-lg bg-gradient-to-br from-teal-900 to-yellow-400 hover:from-zinc-800 hover:to-teal-400  px-6 py-3 rounded-md transition">
+               className="shadow-lg bg-gradient-to-br from-teal-800 to-gray-700 hover:from-zinc-800 hover:to-teal-400  px-6 py-3 rounded-md transition">
                   Visit
              </motion.div >
           </Link>
@@ -234,14 +234,14 @@ const TetrisGame = () => {
        height="500"
        className="object-cover object-left-top h-[90%]  absolute -bottom-10 group-hover:scale-95 transition inset-x-0 w-[90%] rounded-xl mx-auto"
      />
-     <div className=" w-full h-full absolute top-0 left-0 text-sm sm:text-md md:text-lg lg:text-2xl bg-black/50 hidden group-hover:block transiation ">
+     <div className=" w-full h-full absolute top-0 left-0 text-sm sm:text-md md:text-lg lg:text-2xl bg-black/20 hidden group-hover:block transiation ">
        <div className="w-full h-full flex items-center justify-center gap-3">
         <Link href={'https://tetris-game-beige.vercel.app'} target="_blank">
              <motion.div 
              whileTap={{scale:0} 
              }
              transition={{type:'spring' }}
-               className="shadow-lg bg-gradient-to-br from-teal-900 to-yellow-400 hover:from-zinc-800 hover:to-teal-400  px-6 py-3 rounded-md transition">
+               className="shadow-lg bg-gradient-to-br from-teal-800 to-gray-700 hover:from-zinc-800 hover:to-teal-400  px-6 py-3 rounded-md transition">
                   Visit
              </motion.div >
         </Link>

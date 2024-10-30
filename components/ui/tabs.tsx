@@ -40,7 +40,7 @@ export const Tabs = ({
     <>
       <div
         className={cn(
-          "flex flex-row flex-wrap items-center justify-start [perspective:1000px] relative overflow-auto sm:overflow-visible no-visible-scrollbar max-w-full w-full",
+          "flex flex-row flex-wrap items-center  justify-center [perspective:1000px] relative overflow-auto sm:overflow-visible no-visible-scrollbar max-w-full w-full h-[110px]",
           containerClassName
         )}
       >
@@ -52,7 +52,7 @@ export const Tabs = ({
             }}
             onMouseEnter={() => setHovering(true)}
             onMouseLeave={() => setHovering(false)}
-            className={cn("relative px-1 py-2 md:px-4 md:py-2 rounded-full", tabClassName)}
+            className={cn("relative px-1 py-2 md:px-4 md:py-2 rounded-md bg-gray-800 ml-1 mb-1 ", tabClassName)}
             style={{
               transformStyle: "preserve-3d",
             }}
@@ -62,7 +62,7 @@ export const Tabs = ({
                 layoutId="clickedbutton"
                 transition={{ type: "spring", bounce: 0.3, duration: 0.6 }}
                 className={cn(
-                  "absolute inset-0 bg-gradient-to-br from-teal-900 to-yellow-400 rounded-lg ",
+                  "absolute inset-0 bg-gradient-to-br from-teal-800 to-gray-700 rounded-lg ",
                   activeTabClassName
                 )}
               />
