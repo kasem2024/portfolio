@@ -16,55 +16,55 @@ import Link from 'next/link'
 import { ImCheckmark } from "react-icons/im";
 const Wizard = () => {
 
-  const audioRef = useRef<HTMLAudioElement | null>(null);
-  const [isPlaying, setIsPlaying] = useState(false);
+  // const audioRef = useRef<HTMLAudioElement | null>(null);
+  // const [isPlaying, setIsPlaying] = useState(false);
   const [downloaded , setDownloaded] = useState(false)
-  useEffect(() => {
-    // Initialize the audio element
-    audioRef.current = new Audio("/assets/aboutMe.mp4");
+  // useEffect(() => {
+  //   // Initialize the audio element
+  //   audioRef.current = new Audio("/assets/aboutMe.mp4");
 
-    // Cleanup function to pause and reset audio on unmount
-    return () => {
-      if (audioRef.current) {
-        audioRef.current.pause();
-        audioRef.current.src = ""; // Clear the audio source
-      }
-    };
-  }, []);
+  //   // Cleanup function to pause and reset audio on unmount
+  //   return () => {
+  //     if (audioRef.current) {
+  //       audioRef.current.pause();
+  //       audioRef.current.src = ""; // Clear the audio source
+  //     }
+  //   };
+  // }, []);
 
-  const handleAudioToggle = () => {
-    const audio = audioRef.current;
-    if (audio) {
-      if (isPlaying) {
-        audio.pause(); // Pause the audio
-        console.log("Audio paused");
-      } else {
-        audio.currentTime = 0; // Reset to start if it was already played
-        audio.play(); // Play the audio
-        console.log("Audio playing");
-      }
-      setIsPlaying((prev) => !prev); // Toggle playing state
-    }
-  };
+  // const handleAudioToggle = () => {
+  //   const audio = audioRef.current;
+  //   if (audio) {
+  //     if (isPlaying) {
+  //       audio.pause(); // Pause the audio
+  //       console.log("Audio paused");
+  //     } else {
+  //       audio.currentTime = 0; // Reset to start if it was already played
+  //       audio.play(); // Play the audio
+  //       console.log("Audio playing");
+  //     }
+  //     setIsPlaying((prev) => !prev); // Toggle playing state
+  //   }
+  // };
 
-  // Event listener for when audio ends
-  useEffect(() => {
-    const audio = audioRef.current;
-    if (audio) {
-      const handleAudioEnd = () => {
-        setIsPlaying(false); // Reset playing state when audio ends
-        audio.currentTime = 0; // Reset audio to start
-        console.log("Audio ended, reset to start");
-      };
+  // // Event listener for when audio ends
+  // useEffect(() => {
+  //   const audio = audioRef.current;
+  //   if (audio) {
+  //     const handleAudioEnd = () => {
+  //       setIsPlaying(false); // Reset playing state when audio ends
+  //       audio.currentTime = 0; // Reset audio to start
+  //       console.log("Audio ended, reset to start");
+  //     };
 
-      audio.addEventListener("ended", handleAudioEnd);
+  //     audio.addEventListener("ended", handleAudioEnd);
 
-      // Cleanup event listener on unmount
-      return () => {
-        audio.removeEventListener("ended", handleAudioEnd);
-      };
-    }
-  }, []);
+  //     // Cleanup event listener on unmount
+  //     return () => {
+  //       audio.removeEventListener("ended", handleAudioEnd);
+  //     };
+  //   }
+  // }, []);
 
 
   return (
@@ -126,7 +126,7 @@ const Wizard = () => {
         </motion.a>
         <div className="absolute inset-x-0 animate-pulse h-[3px] delay-500 -bottom-[4px] bg-gradient-to-r w-3/4 mx-auto from-transparent via-white group-hover:via-transparent to-transparent transition-all " />
       </div>
-      <div className='w-full relative group'>
+      {/* <div className='w-full relative group'>
       <motion.button 
         onClick={handleAudioToggle}
         whileTap={{scale:1.1}}
@@ -136,7 +136,7 @@ const Wizard = () => {
         
       </motion.button>
       <div className="absolute inset-x-0 animate-pulse h-[3px] -bottom-[4px] bg-gradient-to-r w-3/4 mx-auto from-transparent group-hover:via-transparent via-white to-transparent" />
-      </div>
+      </div> */}
     </div>
     <div className='w-[400px] h-[400px]'></div>
     </Vortex>
