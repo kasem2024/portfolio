@@ -7,7 +7,7 @@ import { words } from '@/lib/words'
 import { ExpandableCard } from '@/components/ExpandableCard'
 const Education = () => {
   return (
-    <main className='w-screen h-screen overflow-x-hidden overflow-y-hidden relative bg-education bg-cover  '>
+    <main className='w-screen h-screen overflow-x-hidden overflow-y-hidden relative bg-education bg-covero  '>
       <div className='bg-black/10 backdrop-blur-md absolute inset-0 w-full h-full'></div>
         <motion.div  
         className='w-full h-full relative'

@@ -33,7 +33,7 @@ export function ImagesSliderDemo() {
         </motion.p>
         <button className=" sm:mt-4 px-4 py-2 backdrop-blur-md border-none bg-black/50 text-white mx-auto text-center rounded-full relative  ">
           <Link href={'/contact'} className="  text-sm md:text-md lg:text-lg">Contact now →</Link>
-          <div className="absolute inset-x-0  h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-blue-600 to-transparent" />
+          <div className="absolute inset-x-0  h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-teal-600 to-transparent" />
         </button>
       </motion.div>
     </ImagesSlider>

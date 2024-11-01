@@ -19,7 +19,7 @@ const Intro = () => {
       damping: 200,
       repeat:Infinity 
       }} 
-      className="relative w-full h-full p-10 shadow-lg flex-col items-center justify-center  overflow-hidden outline-double outline-8  outline-offset-8 outline-white  px-6 py-3 bg-zinc-100 text-white font-semibold rounded-lg  ">
+      className="relative w-full h-full p-10 shadow-lg flex-col items-center justify-center overflow-hidden    px-6 py-3 bg-zinc-100 text-white font-semibold rounded-sm  ">
         <div className='flex justify-center items-center '>
           <div className="  w-[250px] h-[250px]  overflow-hidden flex  justify-center items-center rounded-md  ">
             <Image src={'/portfolio-image2.png'} alt="image"   width={250} height={250}/>  
@@ -35,21 +35,26 @@ const Intro = () => {
           <div className=' text-teal-600 inline-flex p-3'><AiFillSafetyCertificate /></div>
           Mohamed Kasem
         </div>
-      <div  className={cn("absolute top-0 -left-7   rounded-full  w-[10%] h-[10%] animate-spin delay-0  outline-double outline-8  outline-offset-8 outline-teal-900") } >
+        
+      {/* done */}
+      <div  className={cn("absolute top-0 -left-7 bg-gradient-to-tr from-cyan-600 via-teal-700 to-gray-800  rounded-md shadow-lg w-[15%] h-[15%]    ") } >
       </div> 
-      <div  className={cn("absolute top-0 -right-7    rounded-full w-[10%] h-[10%] animate-spin delay-75 outline-double outline-8  outline-offset-8 outline-teal-900") } >
+      {/* done */}
+      <div  className={cn("absolute top-0 -right-7   bg-gradient-to-tl from-cyan-600 via-teal-700 to-gray-800 rounded-sm shadow-lg w-[15%] h-[15%]      ") } >
       </div>    
-      <div  className={cn("absolute -top-7 left-0   rounded-full w-[10%] h-[10%] animate-spin delay-100  outline-double outline-8  outline-offset-8 outline-teal-900") } >
+      {/* done */}
+      <div  className={cn("absolute -top-7 left-0   bg-gradient-to-tr from-cyan-600 via-teal-700 to-gray-800  rounded-sm  w-[15%] h-[15%]      ") } >
       </div> 
-      <div  className={cn("absolute -top-7 right-0  rounded-full w-[10%] h-[10%] animate-spin delay-200 outline-double outline-8  outline-offset-8 outline-teal-900") } >
+      {/* done */}
+      <div  className={cn("absolute -top-7 right-0  bg-gradient-to-tl from-cyan-600 via-teal-700 to-gray-800  rounded-sm  w-[15%] h-[15%]      ") } >
       </div>  
-      <div  className={cn("absolute bottom-0 -left-7   rounded-full w-[10%] h-[10%] animate-spin delay-0  outline-double outline-8  outline-offset-8 outline-teal-900") } >
+      <div  className={cn("absolute bottom-0 -left-7  bg-gradient-to-br from-cyan-600 via-teal-700 to-gray-800  rounded-sm  w-[15%] h-[15%]      ") } >
       </div> 
-      <div  className={cn("absolute bottom-0 -right-7   rounded-full w-[10%] h-[10%] animate-spin delay-75 outline-double outline-8  outline-offset-8 outline-teal-900") } >
+      <div  className={cn("absolute bottom-0 -right-7   bg-gradient-to-bl from-cyan-600 via-teal-700 to-gray-800  rounded-sm  w-[15%] h-[15%]      ") } >
       </div>    
-      <div  className={cn("absolute -bottom-7 left-0   rounded-full w-[10%] h-[10%] animate-spin delay-100  outline-double outline-8  outline-offset-8 outline-teal-900") } >
+      <div  className={cn("absolute -bottom-7 left-0   bg-gradient-to-br from-cyan-600 via-teal-700 to-gray-800  rounded-sm  w-[15%] h-[15%]      ") } >
       </div> 
-      <div  className={cn("absolute -bottom-7 right-0    rounded-full w-[10%] h-[10%] animate-spin  delay-200 outline-double outline-8  outline-offset-8 outline-teal-900") } >
+      <div  className={cn("absolute -bottom-7 right-0    bg-gradient-to-bl from-cyan-600 via-teal-700 to-gray-800  rounded-sm  w-[15%] h-[15%]      ") } >
       </div>  
     </motion.div>
   )

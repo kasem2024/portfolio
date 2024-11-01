@@ -7,7 +7,7 @@ import Wizard from "@/components/Wizard";
 export default function Home() {
  
   return (
-    <main className="flex h-screen w-screen  items-center justify-between   overflow-x-hidden overflow-y-hidden  ">
+    <main className="flex h-screen w-screen  items-center justify-between   ">
           
       <Wizard/>
     

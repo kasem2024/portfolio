@@ -1,15 +1,27 @@
-import type { Config } from "tailwindcss"
+import type { Config } from "tailwindcss";
+import tailwindcssAnimate from "tailwindcss-animate";
+import flattenColorPalette from "tailwindcss/lib/util/flattenColorPalette";
 
+function addVariablesForColors({ addBase, theme }: any) {
+  const allColors = flattenColorPalette(theme("colors"));
+  const newVars = Object.fromEntries(
+    Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
+  );
 
+  addBase({
+    ":root": newVars,
+  });
+}
 
-const config = {
+// Apply Config type to the export
+const config: Config = {
   darkMode: ["class"],
   content: [
     './pages/**/*.{ts,tsx}',
     './components/**/*.{ts,tsx}',
     './app/**/*.{ts,tsx}',
     './src/**/*.{ts,tsx}',
-	],
+  ],
   prefix: "",
   theme: {
     container: {
@@ -20,31 +32,28 @@ const config = {
       },
     },
     extend: {
-     
       animation: {
         spotlight: "spotlight 2s ease .75s 1 forwards",
       },
       keyframes: {
         spotlight: {
           "0%": {
-            // opacity: 0 ,
             transform: "translate(-72%, -62%) scale(0.5)",
           },
           "100%": {
-            // opacity: 1,
             transform: "translate(-50%,-40%) scale(1)",
           },
         },
       },
       backgroundImage: {
-        'education': "url('/education/educationbg.png')",
-        'skills': "url('/skills/bg5.jpg')",
-        'services': "url('/services/services.jpg')",
-        'space1': "url('/space1.png')",
-        'space3': "url('/space2.png')",
-        'space4': "url('/space3.png')",
-        'space5': "url('/space4.png')",
-        'space6': "url('/space5.png')",
+        education: "url('/education/educationbg.png')",
+        skills: "url('/skills/bg5.jpg')",
+        services: "url('/services/services.jpg')",
+        space1: "url('/space1.png')",
+        space3: "url('/space2.png')",
+        space4: "url('/space3.png')",
+        space5: "url('/space4.png')",
+        space6: "url('/space5.png')",
       },
       colors: {
         border: "hsl(var(--border))",
@@ -86,26 +95,12 @@ const config = {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
-      // keyframes: {
-      //   "accordion-down": {
-      //     from: { height: "0" },
-      //     to: { height: "var(--radix-accordion-content-height)" },
-      //   },
-      //   "accordion-up": {
-      //     from: { height: "var(--radix-accordion-content-height)" },
-      //     to: { height: "0" },
-      //   },
-      // },
-      // animation: {
-      //   "accordion-down": "accordion-down 0.2s ease-out",
-      //   "accordion-up": "accordion-up 0.2s ease-out",
-      // },
     },
   },
-  plugins: [require("tailwindcss-animate")]
-    
-} satisfies Config
+  plugins: [
+    tailwindcssAnimate,
+    addVariablesForColors,
+  ],
+};
 
-
-
-export default config
+export default config;
