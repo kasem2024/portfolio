@@ -35,7 +35,7 @@ const page = () => {
         <ul className="flex flex-wrap justify-center items-center gap-1 md:gap-2 p-6 ">
           {skillsData.map((skill, index) => (
             <motion.li
-              className="bg-teal-700  rounded-xl px-[2px] py-0 md:px-5 md:py-3  font-serif text-white shadow-lg w-[120px] md:w-[150px] sm:text-sm md:text-md  lg:text-lg xl:text-xl"
+              className="bg-gray-800  rounded-xl px-[2px] py-0 md:px-5 md:py-3  font-serif text-white shadow-lg w-[120px] md:w-[150px] sm:text-sm md:text-md  lg:text-lg xl:text-xl"
               key={index}
               variants={fadeInAnimationVariants}
               initial="initial"
